@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjdl4147uehse"]
+
+[ext_resource type="Texture2D" uid="uid://bj4svbejvhxx1" path="res://Images/BG.png" id="1_ofm0e"]
+
+[node name="Backround" type="Sprite2D"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_ofm0e")
+centered = false

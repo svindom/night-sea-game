@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Night Sea Game"
+run/main_scene="res://Scenes/main_scene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://night_sea_app_icon_128.png"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [rendering]
 
