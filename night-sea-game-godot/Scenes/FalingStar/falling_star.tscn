@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://huu7dc50elp6"]
+
+[ext_resource type="Texture2D" uid="uid://vgjocpjdl141" path="res://Sprite_Sheets/Fallen_Sta_Sprite_Sheetr.png" id="1_nw0dc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65ejm"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2dml"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db1if"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mjgp"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgwqh"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr7hb"]
+atlas = ExtResource("1_nw0dc")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oduwe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65ejm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2dml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_db1if")
+}, {
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_6mjgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgwqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr7hb")
+}],
+"loop": false,
+"name": &"falling_star",
+"speed": 10.0
+}]
+
+[node name="FallingStar" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_oduwe")
+animation = &"falling_star"
+frame = 5
+frame_progress = 1.0
