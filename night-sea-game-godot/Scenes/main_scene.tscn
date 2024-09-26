@@ -1,7 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://brh1gwie017ds"]
+[gd_scene load_steps=4 format=3 uid="uid://brh1gwie017ds"]
 
 [ext_resource type="PackedScene" uid="uid://bjdl4147uehse" path="res://Scenes/Backround/backround.tscn" id="1_prkyd"]
+[ext_resource type="PackedScene" uid="uid://costgjm7gkxdi" path="res://Scenes/Paddle/paddle.tscn" id="2_ytk7i"]
+[ext_resource type="PackedScene" uid="uid://dtkbxebe6xke0" path="res://Scenes/Drop/drop.tscn" id="3_vqlqs"]
 
 [node name="MainScene" type="Node2D"]
 
 [node name="Backround" parent="." instance=ExtResource("1_prkyd")]
+
+[node name="Paddle" parent="." instance=ExtResource("2_ytk7i")]
+position = Vector2(685, 567)
+scale = Vector2(0.5, 0.5)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Drop" parent="." instance=ExtResource("3_vqlqs")]
+position = Vector2(683, 54)
+gravity_force = 100.0

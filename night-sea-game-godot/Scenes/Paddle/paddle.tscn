@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://costgjm7gkxdi"]
+
+[ext_resource type="Texture2D" uid="uid://lxgh66dm82hf" path="res://Images/Catcher.png" id="1_tw21a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yoegq"]
+radius = 19.0
+height = 274.0
+
+[node name="Paddle" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 1)
+texture = ExtResource("1_tw21a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_yoegq")
